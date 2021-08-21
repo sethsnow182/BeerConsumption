@@ -3,11 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A Data Driven Map</title>
+        <title>Beer consumption in Europe</title>
             <!-- Step 1 - Include the fusioncharts core library -->
             <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
             <!-- Step 2 - Include the fusion theme -->
             <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+            <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+
 </head>
 <style>
     body {
@@ -42,6 +44,8 @@
             "chart": {
                 "caption": "Beer consumption per capita by country in Europe",
                 "subCaption": "(liters per year)",
+                captionFontColor: "#000000",
+                labelFontColor: "#000000",
                 "theme": "fusion",
                 "formatNumberScale": "0",
                 showentitytooltip: "0",
