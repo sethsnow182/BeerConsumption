@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage":"https://sethsnow182.github.io/BeerConsumption",
+  "homepage":"https://sethsnow182.github.io/beerconsumption",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
