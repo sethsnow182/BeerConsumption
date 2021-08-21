@@ -19,7 +19,21 @@
     svg > g:nth-child(4) {
   display: none;
 }
-    
+
+
+
+#data {
+  position: absolute;
+    color: white;
+    text-decoration: auto;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+#data:hover {
+  text-decoration: underline;
+}
+
 
 
 </style>
@@ -27,6 +41,7 @@
     
     <body>
         <div id="chart-container">A world map will load here!</div>
+        <a id="data" href="https://en.wikipedia.org/wiki/List_of_countries_by_beer_consumption_per_capita" target="_blank">Data source</a>
     </body>
 
 
@@ -43,14 +58,17 @@
             "chart": {
                 "caption": "Beer consumption per capita by country in Europe <br> 2019",
                 "subCaption": "(liters per year)",
+                "subCaption": "(liters per year)",
                 captionFontColor: "#000000",
                 labelFontColor: "#000000",
                 "theme": "fusion",
                 "formatNumberScale": "0",
                 showentitytooltip: "0",
-            showentityhovereffect: "0",
+              showentityhovereffect: "0",
                  showlabels: "0",
                 showlegend: 1,
+                HoverColor: "1",
+                
                 
                 nullentitycolor: "#ECE9D3",
                 entitytooltext:
@@ -140,6 +158,7 @@
     alpha: "100",
     fontbold: "1",
     usehovercolor: "1",
+    
     showtooltip: "1"
   },
   {
