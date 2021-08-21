@@ -1,0 +1,340 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Data Driven Map</title>
+            <!-- Step 1 - Include the fusioncharts core library -->
+            <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+            <!-- Step 2 - Include the fusion theme -->
+            <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+<style>
+    body {
+        background-color:rgb(93, 93, 93);
+        margin: 15px;
+    }
+
+    svg > g:nth-child(4) {
+  display: none;
+}
+    
+
+
+</style>
+<body>
+    
+    <body>
+        <div id="chart-container">A world map will load here!</div>
+    </body>
+
+
+    <script>
+
+    FusionCharts.ready(function() {
+    var populationMap = new FusionCharts({
+        type: 'maps/europe',
+        renderAt: 'chart-container',
+        width: '100%',
+        height: '100%',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Beer consumption per capita by country in Europe",
+                "subCaption": "(liters per year)",
+                "theme": "fusion",
+                "formatNumberScale": "0",
+                showentitytooltip: "0",
+            showentityhovereffect: "0",
+                 showlabels: "0",
+                showlegend: 1,
+                
+                nullentitycolor: "#ECE9D3",
+                entitytooltext:
+      "<div style='font-size:14px; text-align:center; padding: 2px 4px 2px 4px; color:black;'>$lName</div><div style='font-size:12px; color:black;'>Liters per year: <b>$valueL</b></div>",
+                "numberSuffix": "L"
+            },
+            "colorrange": {
+                startlabel: "Low",
+                endlabel: "High",
+                code: "#00A971",
+                minvalue: "0",
+                gradient: "1",
+                "color": [{
+                    "minvalue": "0",
+                    "maxvalue": "50",
+                    code: "#EFD951"
+                    
+                    
+                }, {
+                    "minvalue": "50",
+                    "maxvalue": "100",
+                    code: "#FD8963"
+                
+                }, {
+                    "minvalue": "100",
+                    "maxvalue": "150",
+                    code: "#FD8963"
+                
+                }, {
+                    "minvalue": "150",
+                    "maxvalue": "200",
+                    code: "#D60100"
+                }]
+            },
+            "data": [
+  {
+    "Value": 108,
+    "ID": "003",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+    
+  },
+  {
+    "Value": 66,
+    "ID": "005",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 69,
+    "ID": "006",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 79,
+    "ID": "007",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 86,
+    "ID": "008",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 189,
+    "ID": "009",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 60,
+    "ID": "010",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 81,
+    "ID": "011",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 72,
+    "ID": "012",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 33,
+    "ID": "013",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 99,
+    "ID": "014",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 74,
+    "ID": "016",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 93,
+    "ID": "018",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 31,
+    "ID": "019",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 81,
+    "ID": "020",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 74,
+    "ID": "022",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 79,
+    "ID": "029",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 98,
+    "ID": "031",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 55,
+    "ID": "032",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 100,
+    "ID": "033",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 58,
+    "ID": "046",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 55,
+    "ID": "035",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 76,
+    "ID": "036",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 80,
+    "ID": "037",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 89,
+    "ID": "038",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 55,
+    "ID": "040",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  },
+  {
+    "Value": 11,
+    "ID": "045",
+    showlabel: "1",
+    alpha: "100",
+    fontbold: "1",
+    usehovercolor: "1",
+    showtooltip: "1"
+  }
+]
+        }
+    });
+    populationMap.render();
+});
+
+
+
+    </script>
+</body>
+</html>
