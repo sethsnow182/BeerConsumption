@@ -41,7 +41,7 @@
         dataFormat: 'json',
         dataSource: {
             "chart": {
-                "caption": "Beer consumption per capita by country in Europe",
+                "caption": "Beer consumption per capita by country in Europe <br> 2019",
                 "subCaption": "(liters per year)",
                 captionFontColor: "#000000",
                 labelFontColor: "#000000",
@@ -55,7 +55,7 @@
                 nullentitycolor: "#ECE9D3",
                 entitytooltext:
       "<div style='font-size:14px; text-align:center; padding: 2px 4px 2px 4px; color:black;'>$lName</div><div style='font-size:12px; color:black;'>Liters per year: <b>$valueL</b></div>",
-                "numberSuffix": "L"
+                "numberSuffix":  " L"
             },
             "colorrange": {
                 startlabel: "Low",
@@ -135,6 +135,7 @@
   {
     "Value": 189,
     "ID": "009",
+    tooltext: "<div style='font-size:14px; text-align:center; color:black;'>Czech people drink the most per head!</div><div style='font-size:12px; text-align:center; color:black;'>Liters per year: <b>$valueL</b></div>",
     showlabel: "1",
     alpha: "100",
     fontbold: "1",
@@ -328,7 +329,10 @@
     alpha: "100",
     fontbold: "1",
     usehovercolor: "1",
-    showtooltip: "1"
+    showtooltip: "1",
+    tooltext: "<div style='font-size:14px; text-align:left; color:black;'>Turkish people seem not to drink a lot!</div><div style='font-size:12px; text-align:center; color:black;'>Liters per year: <b>$valueL</b></div>",
+    
+
   }
 ]
         }
